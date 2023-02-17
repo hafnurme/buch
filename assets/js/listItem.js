@@ -72,10 +72,6 @@ const createButtonOptions = (isComplete, bookId) => {
     optionsContainer.append(undoCompleteButton);
   }
 
-  const menuButton = document.createElement("span");
-  menuButton.setAttribute("class", "icon-button");
-  menuButton.innerHTML = `<img src="./assets/icon/menu.svg" />`;
-
   const deleteButton = document.createElement("span");
   deleteButton.setAttribute("class", "icon-button");
   deleteButton.innerHTML = `<img src="./assets/icon/trash.svg" />`;
