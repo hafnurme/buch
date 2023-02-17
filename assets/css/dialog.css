@@ -1,0 +1,55 @@
+#popup {
+  width: 83%;
+  padding: 1rem;
+  background-color: #f6fee8;
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: var(--round-base);
+  border: 1px solid #121212;
+  box-shadow: 3px 4px #121212;
+}
+.popup__obj {
+  color: #007f5f;
+  font-weight: 600;
+}
+.delete-dialog {
+  position: fixed;
+  top: 0;
+  width: calc(100% - 2rem);
+  box-sizing: border-box;
+  margin: 0 1rem;
+  border: 1px solid #121212;
+  padding: 12px;
+  background: #f6fee8;
+  border-radius: var(--round-base);
+  box-shadow: 3px 3px #121212;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.dialog__confirmation {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+  margin-top: 8px;
+}
+.dialog__button {
+  background: #eeef20;
+  padding: 6px 10px;
+  border-radius: var(--round-base);
+  cursor: pointer;
+}
+
+.edit-dialog {
+  position: fixed;
+  top: 0;
+  width: calc(100% - 2rem);
+  box-sizing: border-box;
+  margin: 0 1rem;
+  border: 1px solid #121212;
+  background: #f6fee8;
+  border-radius: var(--round-base);
+  box-shadow: 6px 6px #caffbf, 7px 7px #121212;
+  top: 1rem;
+}

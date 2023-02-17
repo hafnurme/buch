@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buch App</title>
+    <link rel="icon" href="./assets//icon/book-square.svg" />
+    <link rel="stylesheet" href="./assets/css/dialog.css" />
+    <link rel="stylesheet" href="./assets/css/form.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <main class="main">
+        <div class="container" id="home">
+          <div class="hero-section">
+            <div class="hero-section__child-wrapper">
+              <img
+                src="assets/image/readbook-ilustration.png"
+                alt="hero"
+                class="hero__image"
+              />
+              <img src="assets/image/blob.svg" alt="blob" class="blob-image" />
+              <h1>Búch</h1>
+              <p class="hero__heading">Simple book reading management.</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="container form" id="add-book-form">
+          <h2 class="section__heading">Tambah Buku</h2>
+          <div class="form__group">
+            <label class="form__label" for="title">
+              <span>Judul</span>
+            </label>
+            <input class="form__input" type="text" id="title" name="title" />
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="author">
+              <span>Penulis</span>
+            </label>
+            <input class="form__input" type="text" id="author" name="author" />
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="year">
+              <span>Tahun</span>
+            </label>
+            <input class="form__input" type="number" id="year" name="year" />
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="page_total">
+              <span>Jumlah Halaman</span>
+            </label>
+            <input
+              class="form__input"
+              type="number"
+              id="page_total"
+              name="page_total"
+            />
+          </div>
+
+          <div class="form__group-checkbox">
+            <input type="checkbox" id="isComplete" name="isComplete" />
+            <label class="" for="isComplete">
+              <span>Tandai Sudah Dibaca</span>
+            </label>
+          </div>
+
+          <div class="form__group">
+            <button>Tambahkan</button>
+          </div>
+        </form>
+
+        <div class="container" id="uncompleted-list-section">
+          <h2 class="section__heading">Buku</h2>
+          <div class="form__group">
+            <input
+              class="form__input"
+              placeholder="searchBook"
+              type="text"
+              id="search-book"
+              name="title"
+            />
+          </div>
+          <ul class="book__list" id="uncompleted-list"></ul>
+        </div>
+
+        <div class="container" id="completed-list-section">
+          <h2 class="section__heading">Selesai Dibaca</h2>
+          <div class="form__group">
+            <input
+              class="form__input"
+              placeholder="Search Book"
+              type="text"
+              id="search-book"
+              name="book_title"
+            />
+          </div>
+          <ul class="book__list" id="completed-list"></ul>
+        </div>
+      </main>
+      <footer>
+        <div class="navigation">
+          <ul class="menu__list">
+            <li class="menu__item" id="home-btn">
+              <img src="./assets/icon/home.svg" alt="home" />
+            </li>
+            <li class="menu__item" id="uncompleted-list-btn">
+              <img src="assets/icon/clipboard-text.svg" alt="saved" />
+            </li>
+            <li class="menu__item" id="completed-list-btn">
+              <img src="./assets/icon/clipboard-tick.svg" alt="" />
+            </li>
+            <li class="menu__item" id="add-book-btn">
+              <img src="./assets/icon/add-square.svg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="./assets/js/dialog.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/navigation.js"></script>
+    <script src="./assets/js/listItem.js"></script>
+    <script src="./assets/js/searchBook.js"></script>
+  </body>
+</html>
